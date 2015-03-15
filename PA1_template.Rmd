@@ -1,8 +1,5 @@
 ## Reproducible Research: Assignment 1
 ### Steps taken in 5-min intervals over a period of 2 months
-```{r, echo=FALSE}
-setwd("C:/Users/anirbanc/Desktop/Temp_Code_Files/6_RepResch/Project1")
-```
 #### Load activity data for this assignment
 ```{r}
 act_data <- read.csv("activity.csv")

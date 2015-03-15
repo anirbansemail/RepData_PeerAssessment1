@@ -1,6 +1,5 @@
 ## Reproducible Research: Assignment 1
 ### Steps taken in 5-min intervals over a period of 2 months
-
 #### Load activity data for this assignment
 
 ```r
@@ -86,7 +85,7 @@ plot(x=op2$interval, y=op2$steps, type = "l",
      xlab = "5-min Interval", ylab = "Avg. Steps across ALL Days")
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
   
 **Maximum** number of steps occur in 5-min interval **835**.
 
@@ -168,7 +167,7 @@ hist(x = op3$steps,
      xlab = "Total Steps per Day")
 ```
 
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
   
 **Comparing 2 histograms side by side -**
 
@@ -182,7 +181,7 @@ hs2 <- hist(x = op3$steps,
      xlab = "Total Steps per Day")
 ```
 
-![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 
   
 Looks like the number of days in the 10K-break jumped from high-20s to mid-30s.  
 Missing 8 days (2304 NAs / 288 daily intervals) have been imputed with an **"average day"** of the 2-month period with Total Steps of **10766.19**. This can also be observed by comparing the values of the 2 histograms.  
@@ -235,7 +234,7 @@ xyplot(steps ~ interval | day,
             layout = c(1,2))
 ```
 
-![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18-1.png) 
+![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png) 
   
 Looks like total number of steps for "an average weekend day" is **12201.52** vs. "an average weekday" is **10255.85**.  
 However, max steps for a 5-min interval is greater for weekday vs. weekend; **230.38 vs. 166.64**  
